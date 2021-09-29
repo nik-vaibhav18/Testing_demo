@@ -8,7 +8,7 @@ import numpy as np
 logging_str="[%(asctime)s: %(levelname)s: %(module)s] %(message)s"
 logging_dir= "logs"
 os.makedirs(logging_dir,exist_ok=True)
-logging.basicConfig(filename=os.path.join(logging_dir,"running_logs.log"),level=logging.INFO,format=logging_str)
+logging.basicConfig(filename=os.path.join(logging_dir,"running_logs.log"),level=logging.INFO,format=logging_str,filemode="a")
 
 AND = {"x1": [0,0,1,1],
         "x2": [0,1,0,1],

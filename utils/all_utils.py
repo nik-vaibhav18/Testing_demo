@@ -4,6 +4,7 @@ import numpy as np
 import joblib
 import logging
 
+
 def prepare_data(df):
   logging.info("preparing the data by segregating dependent and independent variables")
   X = df.drop("y", axis=1)
